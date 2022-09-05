@@ -1,0 +1,42 @@
+.mode-control-container {
+  position: absolute;
+  top: 0px;
+  left: calc(100vw - 300px);
+  height: calc(100vh );
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background: rgb(2, 9, 23);
+}
+
+.mode {
+  position: relative;
+  right: 0px;
+  top: 0px;
+  height: 40px;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.control-icon {
+  position: relative;
+  margin: 5px 10px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+
+.control-icon:hover {
+  fill: rgb(2, 9, 23);
+  background: white;
+  transform: scale(1.2);
+}
+
+.control-icon:active {
+  transform: scale(1.1);
+}

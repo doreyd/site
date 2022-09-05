@@ -1,0 +1,7 @@
+.dot {
+  transition: r linear 0.1s;
+}
+
+.dot:hover {
+  r: 15;
+}

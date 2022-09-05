@@ -1,0 +1,21 @@
+@keyframes logo-animation {
+  0% {
+    stroke-dashoffset: 170;
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.logo {
+  animation: logo-animation 12s infinite;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    display: none;
+  }
+}

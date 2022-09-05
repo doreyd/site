@@ -1,0 +1,20 @@
+.grid {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  height: calc(100vh - 40px);
+  width: calc(100vw - 300px);
+  background: rgb(74, 74, 75);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.svg {
+  position: relative;
+  width: 70vw;
+  height: auto;
+  cursor: pointer;
+}

@@ -1,0 +1,113 @@
+.modal {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.box {
+  position: relative;
+  height: auto;
+  min-width: 300px;
+  border-radius: 5px;
+  background: rgb(226, 224, 224);
+  display: flex;
+  background: white;
+  color: black;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  right: 5px;
+  transform: scale(1);
+  transition: all linear 0.1s;
+  cursor: pointer;
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+
+.close:active {
+  fill: brown;
+}
+
+.column {
+  position: relative;
+  display: flex;
+  min-width: 300px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.box-title {
+  position: relative;
+  background: rgb(4, 28, 15);
+  background: rgb(10, 44, 26);
+  color: white;
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  position: relative;
+  margin: 0.4rem 0.6rem;
+}
+
+.grey {
+  position: relative;
+  color: rgb(100, 121, 121);
+  margin: 0.4rem 1rem;
+}
+
+.string-class {
+  position: relative;
+  color: brown;
+  margin: 0.4rem 1rem;
+}
+
+.number-class {
+  position: relative;
+  color: rgb(0, 90, 39);
+  margin: 0.4rem 1rem;
+}
+
+.array-class {
+  position: relative;
+  color: rgb(3, 74, 94);
+  margin: 0.4rem 1rem;
+}
+
+.object-class {
+  position: relative;
+  color: rgb(109, 4, 25);
+  margin: 0.4rem 1rem;
+}
+
+.boolean-class {
+  position: relative;
+  color: rgb(184, 88, 9);
+  margin: 0.4rem 1rem;
+}
+
+.legend {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  color: white;
+  bottom: 5px;
+}
+
+.line {
+  position: relative;
+  display: flex;
+}

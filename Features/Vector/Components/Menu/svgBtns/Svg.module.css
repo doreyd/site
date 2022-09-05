@@ -1,0 +1,31 @@
+.control-icon-active {
+  position: relative;
+  margin: 5px 10px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: white;
+  fill: rgb(2, 9, 23);
+  transform: scale(1.2);
+  transition: all linear 0.1s;
+  transform: scale(1.1);
+}
+
+.control-icon {
+  position: relative;
+  margin: 5px 10px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+
+.control-icon:hover {
+  background: white;
+  fill: rgb(2, 9, 23);
+  transform: scale(1.2);
+}
+
+.control-icon:active {
+  transform: scale(1.1);
+}

@@ -1,0 +1,78 @@
+.menu {
+  position: relative;
+  height: 45px;
+  width: 100vw;
+  color: var(--secondary);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  flex-direction: row;
+}
+.app-logo {
+  position: relative;
+  height: 38px;
+  width: auto;
+  margin: 0rem 1rem;
+}
+
+.app-name {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(12, 2, 47);
+  width: 300px;
+  margin-right: 1rem;
+}
+
+.app-name-short {
+  position: relative;
+  display: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(12, 2, 47);
+  width: auto;
+  margin-right: 1rem;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  margin: 0rem 2rem 1rem 2rem;
+  padding: 0rem 1rem;
+  cursor: pointer;
+  /* background:lightsalmon; */
+}
+
+.icon {
+  position: relative;
+  padding-top: 5px;
+  width: 34px;
+  height: 34px;
+}
+
+.icon-text {
+  position: relative;
+  padding-top: 5px;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.logout {
+  position: absolute;
+  padding-top: 5px;
+  color: black;
+  font-size: 1.4rem;
+  right: 1rem;
+  /* background:red; */
+  width: 34px;
+  height: 34px;
+}
+
+@media screen and (max-width: 900px) {
+  .app-name {
+    display: none;
+  }
+  .app-name-short {
+    display: flex;
+  }
+}

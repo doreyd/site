@@ -1,0 +1,213 @@
+.project {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+
+.title {
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.1rem;
+  top: 0.5rem;
+  left: 0.5rem;
+  transition: all linear 0.1s;
+}
+
+.description {
+  position: absolute;
+  font-size: 1.1rem;
+  color: white;
+  bottom: -200%;
+  width: 100%;
+  padding: 0% 5%;
+  text-align: center;
+  transition: all linear 0.4s;
+  transition-delay: 0.05s;
+}
+
+@keyframes svg1-animation {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes svg2-animation {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 1;
+  }
+  63% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes svg3-animation {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.svg1 {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  height: 90%;
+  width: 100%;
+  fill: rgb(1, 25, 48);
+  animation: svg1-animation 10s ease-in-out infinite;
+}
+
+.svg2 {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  height: 90%;
+  width: 100%;
+  fill: rgb(1, 25, 48);
+  animation: svg2-animation 10s ease-in-out infinite;
+}
+
+.svg3 {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  height: 90%;
+  width: 100%;
+  fill: rgb(1, 25, 48);
+  animation: svg3-animation 10s ease-in-out infinite;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 0.6rem;
+  }
+  .project {
+    position: relative;
+    height: 90vw;
+    width: 90vw;
+    margin: 1rem 4%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all linear 0.1s;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .project {
+    height: 70vw;
+    width: 70vw;
+  }
+}
+
+@keyframes sign-animation {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.design {
+  position: relative;
+  background-image: radial-gradient(rgb(255, 123, 0), orangered);
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin-top: 10%;
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: 50% 50%;
+  animation: sign-animation 0.5s ease-in;
+}
+
+.code {
+  position: relative;
+  background-image: radial-gradient(royalblue, rgb(36, 78, 206));
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin-top: 10%;
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: 50% 50%;
+  animation: sign-animation 0.5s ease-in;
+}
+
+.webdev {
+  position: relative;
+  background-image: radial-gradient(rgb(187, 39, 187), rgb(136, 35, 136));
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin-top: 10%;
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: 50% 50%;
+  animation: sign-animation 0.5s ease-in;
+}
+
+.hosting {
+  position: relative;
+  background-image: radial-gradient(rgb(10, 175, 10), green);
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin-top: 10%;
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: 50% 50%;
+  animation: sign-animation 0.5s ease-in;
+}

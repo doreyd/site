@@ -1,0 +1,31 @@
+.wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.controls {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all linear 0.1s;
+  fill: black;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.controls:hover {
+  background: rgba(0, 0, 0, 0.7);
+  fill: white;
+  transform: scale(1.2);
+}
+
+.controls:active {
+  transform: scale(0.9);
+}

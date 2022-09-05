@@ -1,0 +1,181 @@
+.menu {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background:red; */
+  width: 100%;
+  margin: 0.1rem 0rem;
+}
+
+.menu-vertical {
+  position: relative;
+  color: white;
+  display: flex;
+  /* background:red; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.menu2 {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0.5rem 0rem;
+}
+
+.form-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* background: blue; */
+}
+
+.input-wrapper {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around;
+    align-items: left; */
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  /* background: red; */
+  margin: 0.5rem 0rem;
+}
+
+.input {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  padding: 4px 10px;
+  width: 60%;
+}
+
+.input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.btn2 {
+  position: relative;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn2:hover {
+  background: white;
+  color: rgb(15, 37, 2);
+}
+.btn2:active {
+  background: rgb(204, 201, 201);
+  color: rgb(5, 12, 0);
+}
+.btn3 {
+  position: relative;
+  border-radius: 4px;
+  padding: 4px 10px;
+  top: 8px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn3:hover {
+  background: white;
+  color: rgb(15, 37, 2);
+}
+.btn3:active {
+  background: rgb(204, 201, 201);
+  color: rgb(5, 12, 0);
+}
+
+.form-title {
+  position: relative;
+  color: white;
+  /* background: red; */
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0rem 2rem;
+}
+
+.input-key {
+  position: relative;
+  font-size: 0.8rem;
+}
+
+.input {
+  position: relative;
+  width: 80%;
+}
+
+.input-wrapper {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around;
+  align-items: left; */
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  /* background: red; */
+  margin: 0.5rem 0rem;
+}
+
+.input-wrapper2 {
+  position: relative;
+  color: white;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: space-around;
+  align-items: left; */
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  /* background: red; */
+  margin: 0.5rem 1rem;
+}
+
+.checkbox {
+  position: relative;
+  margin: 0rem 0.5rem 0rem 0rem;
+  cursor: pointer;
+}
+
+.checkbox-key {
+  position: relative;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.inside-wrapper {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around;
+  align-items: left; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* background: red; */
+  margin: 0.5rem 0rem;
+}

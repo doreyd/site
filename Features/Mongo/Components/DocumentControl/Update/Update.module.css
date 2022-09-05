@@ -1,0 +1,97 @@
+.menu {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background:red; */
+  width: 100%;
+  margin: 0.5rem 0rem;
+}
+
+.menu2 {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background:red; */
+    width: 90%;
+    margin: 0.5rem 0rem;
+  }
+
+.form-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  /* background: blue; */
+}
+
+.input-wrapper {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around;
+    align-items: left; */
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  /* background: red; */
+  margin: 0.5rem 0rem;
+}
+
+.input {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  padding: 4px 10px;
+  width: 60%;
+}
+
+.input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.btn2 {
+  position: relative;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn2:hover {
+  background: white;
+  color: rgb(15, 37, 2);
+}
+.btn2:active {
+  background: rgb(204, 201, 201);
+  color: rgb(5, 12, 0);
+}
+.btn3 {
+  position: relative;
+  border-radius: 4px;
+  padding: 4px 10px;
+  top: 8px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn3:hover {
+  background: white;
+  color: rgb(15, 37, 2);
+}
+.btn3:active {
+  background: rgb(204, 201, 201);
+  color: rgb(5, 12, 0);
+}
