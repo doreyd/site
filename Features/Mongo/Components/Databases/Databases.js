@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import styles from "./Databases.module.css";
-import Loading from "../Loading/Loading";
 import Close from "../CloseIcon/Close";
 import usePostFetch from "../../Lib/usePostFetch";
 

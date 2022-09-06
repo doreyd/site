@@ -13,7 +13,6 @@
 
 .list {
   position: relative;
-  /* color: var(--secondary); */
   color: white;
   cursor: pointer;
   display: flex;

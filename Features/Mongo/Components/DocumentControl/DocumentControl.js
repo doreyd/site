@@ -2,10 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 import styles from "./DocumentControl.module.css";
-
 import TopIcons from "./TopIcons/TopIcons";
-import DataMenu from "../Menu/DataMenu/DataMenu";
-
 import Insert from "./Create/Insert";
 import Search from "./Search/Search";
 import Update from "./Update/Update";

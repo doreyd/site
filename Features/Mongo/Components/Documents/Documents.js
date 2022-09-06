@@ -7,7 +7,6 @@ import usePostFetch from "../../Lib/usePostFetch";
 import { useSelector, useDispatch } from "react-redux";
 import getAllKeys from "../../Lib/getAllKeys";
 import projectAll from "../../Lib/projectAll";
-import Empty from "../Empty/Empty";
 import Loading from "../Loading/Loading";
 import OneDocument from "./OneDocument";
 import OneDocumentKeys from "./OneDocumentKeys";
@@ -20,7 +19,6 @@ export default function Documents() {
   );
 
   const theseDocuments = documents[databaseSelected + "-" + collectionSelected];
-  // const notEmpty = theseDocuments && theseDocuments.length !== 0;
 
   const setDocuments = (response) => {
     let data = response.reverse();

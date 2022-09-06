@@ -1,16 +1,10 @@
 import React, { useRef } from "react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import styles from "./Collections.module.css";
-// import styles from "./CollectionsSQL.module.css";
-
-import getAllKeys from "../../Lib/getAllKeys";
 import usePostFetch from "../../Lib/usePostFetch";
 import { useSelector, useDispatch } from "react-redux";
-import Loading from "../Loading/Loading";
 import Close from "../CloseIcon/Close";
-
-// import Small from "./Small.csv";
 
 export default function Collections() {
   const dispatch = useDispatch();
