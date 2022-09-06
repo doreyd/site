@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import usePostFetch from "../../../Lib/usePostFetch";
 import queryAggregator from "../../../Lib/queryAggregator";
-// import getAllKeys from "../../Lib/getAllKeys";
 import projectAll from "../../../Lib/projectAll";
 import styles from "./Update.module.css";
 import Query from "../Query/Query";
 import Updater from "./Updater/Updater";
 import { useSelector, useDispatch } from "react-redux";
 import getAllKeys from "../../../Lib/getAllKeys";
-import fn from "./updater/updateFunctions";
+import fn from "./Updater/updateFunctions";
 
 export default function Search() {
   const dispatch = useDispatch();
