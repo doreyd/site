@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Main from "../Features/Mongo/Components/Main";
+// import Main from "../Features/Mongo/Components/Main";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.jpg" />
       </Head>
-      <Main />
+      {/* <Main /> */}
     </div>
   );
 }

@@ -35,7 +35,6 @@ export default function DocumentControl() {
         <Close />
       </div>
       <TopIcons />
-      {/* <DataMenu dataSource={true} color1={"white"} color2={"rgb(46, 184, 109)"} /> */}
       <div className={styles["control-title"]}>{titles[controlMode]}</div>
       {controlMode === "add" && <Insert />}
       {controlMode === "search" && <Search />}
