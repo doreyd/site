@@ -7,7 +7,7 @@ import Query from "../Query/Query";
 // import Updater from "./Updater/Updater";
 import { useSelector, useDispatch } from "react-redux";
 import getAllKeys from "../../../Lib/getAllKeys";
-import fn from "./Updater/updateFunctions";
+// import fn from "./Updater/updateFunctions";
 
 export default function Search() {
   const dispatch = useDispatch();
@@ -43,14 +43,14 @@ export default function Search() {
     setDocuments
   );
 
-  const launchUpdate = () => {
-    let dataObjList = updateFieldsList.map((key) => updateFieldsData[key]);
-    let updateObj = fn(dataObjList);
+  // const launchUpdate = () => {
+  //   let dataObjList = updateFieldsList.map((key) => updateFieldsData[key]);
+  //   let updateObj = fn(dataObjList);
 
-    const condition = queryAggregator(queryFieldsList, queryFieldsData);
+  //   const condition = queryAggregator(queryFieldsList, queryFieldsData);
 
-    postFetch({ condition: condition, update: updateObj });
-  };
+  //   postFetch({ condition: condition, update: updateObj });
+  // };
 
   return (
     <form className={styles["form-wrapper"]}>
