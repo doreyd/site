@@ -7,7 +7,7 @@ import Query from "../Query/Query";
 // import Updater from "./Updater/Updater";
 import { useSelector, useDispatch } from "react-redux";
 import getAllKeys from "../../../Lib/getAllKeys";
-import fn from "./Updater/fn";
+import fn from "./Up/fn";
 
 export default function Search() {
   const dispatch = useDispatch();
