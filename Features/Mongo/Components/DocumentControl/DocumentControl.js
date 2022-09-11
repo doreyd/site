@@ -5,7 +5,7 @@ import styles from "./DocumentControl.module.css";
 import TopIcons from "./TopIcons/TopIcons";
 import Insert from "./Create/Insert";
 import Search from "./Search/Search";
-// import Update from "./Update/Update";
+import Update from "./Update/Update";
 import Delete from "./Delete/Delete";
 import Show from "./Show/Show";
 import Close from "../CloseIcon/Close";
@@ -38,7 +38,7 @@ export default function DocumentControl() {
       <div className={styles["control-title"]}>{titles[controlMode]}</div>
       {controlMode === "add" && <Insert />}
       {controlMode === "search" && <Search />}
-      {/* {controlMode === "update" && <Update />} */}
+      {controlMode === "update" && <Update />}
       {controlMode === "delete" && <Delete />}
       {controlMode === "show" && <Show />}
     </div>

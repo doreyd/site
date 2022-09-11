@@ -4,7 +4,7 @@ import queryAggregator from "../../../Lib/queryAggregator";
 import projectAll from "../../../Lib/projectAll";
 import styles from "./Update.module.css";
 import Query from "../Query/Query";
-import Updater from "./Updater/Updater";
+// import Updater from "./Updater/Updater";
 import { useSelector, useDispatch } from "react-redux";
 import getAllKeys from "../../../Lib/getAllKeys";
 import fn from "./Updater/updateFunctions";
@@ -55,7 +55,7 @@ export default function Search() {
   return (
     <form className={styles["form-wrapper"]}>
       <Query />
-      <Updater btnHandler={launchUpdate} btnTitle={"Update Document(s)"} />
+      {/* <Updater btnHandler={launchUpdate} btnTitle={"Update Document(s)"} /> */}
     </form>
   );
 }
