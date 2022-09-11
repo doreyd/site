@@ -11,7 +11,6 @@ export default function handler(req, res) {
         .db(database)
         .collection(collection)
         .find({})
-        // .project({ data: 1, _id: 0 })
         .limit(200)
         .toArray((err, dt) => {
           res.status(200).json(dt);

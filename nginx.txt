@@ -1,0 +1,67 @@
+server {
+    listen             80;
+    server_name        doreydmehila.com www.doreydmehila.com;
+    return             301 https://doreydmehila.com$request_uri;
+}
+
+
+server {
+    listen 443 ssl http2;
+    server_name doreydmehila.com;
+    server_tokens off;
+    ssl_certificate       /etc/nginx/server-cert.crt;
+    ssl_certificate_key   /etc/nginx/server-cert.key;
+    ssl on;
+    ssl_session_cache     builtin:1000 shared:SSL:10m;
+    ssl_protocols TLSv1.3;
+    ssl_ciphers "HIGH !aNULL !eNULL !EXPORT !CAMELLIA !DES !MD5 !PSK !RC4";
+    ssl_prefer_server_ciphers on;
+    access_log     /var/log/nginx/nginx-2443.log;
+    location / {
+        proxy_set_header  Host $host;
+        proxy_set_header  X-Real-IP $remote_addr;
+        proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header  X-Forwarded-Proto $scheme;
+
+        proxy_pass   http://localhost:3000;
+
+    if ($request_method !~ ^(GET|HEAD|POST)$ )
+    {
+        return 405;
+    }
+
+    }
+}
+
+***********************************222222 better*************************
+server {
+    listen             80;
+    server_name        doreydmehila.com www.doreydmehila.com;
+    return             301 https://doreydmehila.com$request_uri;
+}
+
+
+server {
+    listen 443 ssl http2;
+    server_name doreydmehila.com;
+    server_tokens off;
+    ssl_certificate       /etc/nginx/server-cert.crt;
+    ssl_certificate_key   /etc/nginx/server-cert.key;
+   
+    location / {
+
+        proxy_pass   http://localhost:3000;
+    }
+}
+
+
+*******************************simple version*********************
+                                                  
+server {
+    listen             80;
+    server_tokens off;
+
+    location / {
+        proxy_pass   http://localhost:3000;
+    }
+}
