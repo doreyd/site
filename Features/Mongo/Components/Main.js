@@ -7,7 +7,7 @@ import Documents from "./Documents/Documents";
 import SearchedDocument from "./Documents/SearchedDocument";
 import Menu from "./Menu/Menu";
 import Modal from "./Modal/Modal";
-// import DocumentControl from "./DocumentControl/DocumentControl";
+import DocumentControl from "./DocumentControl/DocumentControl";
 import styles from "./Main.module.css";
 
 export default function Main() {
@@ -21,7 +21,7 @@ export default function Main() {
       </div>
       <Databases />
       <Collections />
-      {/* <DocumentControl /> */}
+      <DocumentControl />
       <Modal />
     </div>
   );
