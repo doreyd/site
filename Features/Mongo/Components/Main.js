@@ -21,7 +21,7 @@ export default function Main() {
       </div>
       <Databases />
       <Collections />
-      <DocumentControl />
+      {/* <DocumentControl /> */}
       <Modal />
     </div>
   );
