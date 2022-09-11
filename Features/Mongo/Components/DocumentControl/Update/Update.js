@@ -7,7 +7,7 @@ import Query from "../Query/Query";
 // import Updater from "./Updater/Updater";
 import { useSelector, useDispatch } from "react-redux";
 import getAllKeys from "../../../Lib/getAllKeys";
-// import fn from "./Updater/updateFunctions";
+import fn from "./Updater/fn";
 
 export default function Search() {
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ export default function Search() {
     });
   };
 
-  const setDocuments = (result)=>{
+  const setDocuments = (result) => {
     let data = result.reverse();
     let newKeys = getAllKeys(data);
     let projection = projectAll(newKeys);
@@ -36,21 +36,21 @@ export default function Search() {
       type: "SET_DOCUMENTS",
       payload: { data, newKeys: newKeys, projection: projection },
     });
-  }
+  };
 
   const postFetch = usePostFetch(
     queryMany ? "updateManyDocuments" : "updateDocument",
     setDocuments
   );
 
-  // const launchUpdate = () => {
-  //   let dataObjList = updateFieldsList.map((key) => updateFieldsData[key]);
-  //   let updateObj = fn(dataObjList);
+  const launchUpdate = () => {
+    let dataObjList = updateFieldsList.map((key) => updateFieldsData[key]);
+    let updateObj = fn(dataObjList);
 
-  //   const condition = queryAggregator(queryFieldsList, queryFieldsData);
+    const condition = queryAggregator(queryFieldsList, queryFieldsData);
 
-  //   postFetch({ condition: condition, update: updateObj });
-  // };
+    postFetch({ condition: condition, update: updateObj });
+  };
 
   return (
     <form className={styles["form-wrapper"]}>
