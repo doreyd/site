@@ -9,7 +9,8 @@ const nonDeletableDBs = [
 ];
 
 export default function handler(req, res) {
-  const url = process.env.DB_URL;
+  const url = 'mongodb://localhost:27017';
+
   MongoClient.connect(url, function (err, db) {
     if (err) throw err;
     return db

@@ -4,6 +4,8 @@ import styles from "../styles/Home.module.css";
 import Main from "../Main/Main";
 
 export default function Index() {
+
+console.log('testing console');
   return (
     <div className={styles.container}>
       <Head>

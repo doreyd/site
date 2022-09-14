@@ -1,3 +1,4 @@
 module.exports = {
-  reactStrictMode: true,
-}
+
+DB_URL:"mongodb://localhost:27017"
+ }

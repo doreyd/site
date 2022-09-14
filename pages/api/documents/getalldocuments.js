@@ -2,7 +2,7 @@ import { MongoClient } from "mongodb";
 
 export default function handler(req, res) {
   const { database, collection } = JSON.parse(req.body);
-  const url = process.env.DB_URL;
+   const url = 'mongodb://localhost:27017';
   MongoClient.connect(url, function (err, db) {
     if (err) throw err;
 
