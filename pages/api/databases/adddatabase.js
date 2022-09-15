@@ -9,10 +9,15 @@ export default function handler(req, res) {
     if (err) throw err;
     return db
       .db(newDatabase)
-      .collection("dummyCollection")
-      .insertOne({ key: "value" }, function (err, result) {
+      .collection("collection1")
+      .insertOne({ _id: "6542525a2sa5d2a5s45" }, function (err, result) {
         if (err) throw err;
-        res.status(200).json(result);
+        db.db(newDatabase)
+          .collection("collection1")
+          .deleteMany({}, function (err, result) {
+            if (err) throw err;
+            res.status(200).json(result);
+          });
       });
   });
 }

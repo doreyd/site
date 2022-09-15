@@ -12,6 +12,7 @@ const getUrl = {
   renameCollection: "/api/collections/renamecollection",
   addNewCollection: "/api/collections/addcollection",
   deleteCollection: "/api/collections/deletecollection",
+  renameCollection: "/api/collections/renamecollection",
 
   addNewDatabase: "/api/databases/adddatabase",
   deleteDatabase: "/api/databases/deletedatabase",

@@ -4,7 +4,9 @@ export default function handler(req, res) {
   const { database, collection } = JSON.parse(req.body);
   const url = "mongodb://localhost:27017";
 
-  if (!collection) {
+  console.log(collection);
+
+  if (collection === null) {
     res.status(200).json([]);
   }
 

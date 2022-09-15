@@ -18,6 +18,10 @@ export default function Collections() {
 
   const theseCollections = collections[databaseSelected];
 
+  const addCollectionRef = useRef();
+  const deleteCollectionRef = useRef();
+  const renameCollectionRef =useRef();
+
   const classSelected = (name) =>
     collectionSelected === name ? styles["list-selected"] : styles.list;
 
@@ -31,6 +35,7 @@ export default function Collections() {
     });
     addCollectionRef.current.value = null;
     deleteCollectionRef.current.value = null;
+    renameCollectionRef.current.value=null;
   };
 
   const getAllCollections = usePostFetch("getCollections", setCollections);
@@ -38,6 +43,12 @@ export default function Collections() {
     "addNewCollection",
     getAllCollections
   );
+
+  const postRenameCollection = usePostFetch(
+    "renameCollection",
+    getAllCollections
+  );
+
   const postDeleteCollection = usePostFetch(
     "deleteCollection",
     getAllCollections
@@ -49,6 +60,10 @@ export default function Collections() {
 
   const addCollectionHandler = (e) => {
     postAddNewCollection({ newCollection: addCollectionRef.current.value });
+  };
+
+  const renameCollectionHandler = (e) => {
+    postRenameCollection({newName: renameCollectionRef.current.value });
   };
 
   const deleteCollectionHandler = (e) => {
@@ -64,8 +79,7 @@ export default function Collections() {
     });
   };
 
-  const addCollectionRef = useRef();
-  const deleteCollectionRef = useRef();
+ 
 
   return (
     <div
@@ -90,6 +104,17 @@ export default function Collections() {
         />
         <button className={styles.btn} onClick={addCollectionHandler}>
           CREATE{" "}
+        </button>
+      </div>
+      <div className={styles["menu"]}>
+        <input
+          type="text"
+          className={styles.input}
+          placeholder="new name here..."
+          ref={renameCollectionRef}
+        />
+        <button className={styles.btn} onClick={renameCollectionHandler}>
+          RENAME{" "}
         </button>
       </div>
       <div className={styles["menu"]}>

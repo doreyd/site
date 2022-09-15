@@ -302,15 +302,15 @@ export default function counter(state = initialState, action) {
     case "SELECT_DATABASE":
       return {
         ...state,
+        searchOn: false,
         databaseSelected: action.payload,
-        collectionSelected: null,
         databaseMenu: state.databaseMenu === "db" ? null : "db",
       };
     case "SELECT_COLLECTION":
       return {
         ...state,
+        searchOn: false,
         collectionSelected: action.payload,
-        databaseMenu: state.databaseMenu === "coll" ? null : "coll",
       };
     case "SELECT_DOCUMENT":
       return {
