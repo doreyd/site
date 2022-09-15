@@ -19,7 +19,7 @@ export default function counter(state = initialState, action) {
           ...state.collections,
           [state.databaseSelected]: action.payload,
         },
-        collectionSelected: action.payload[0].name,
+       
       };
     case "SET_DOCUMENTS":
       return {

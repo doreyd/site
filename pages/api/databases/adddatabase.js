@@ -10,8 +10,8 @@ export default function handler(req, res) {
     if (err) throw err;
     return db
       .db(newDatabase)
-      .collection("dummyCollection")
-      .insertOne({ dummyData: "dummyData" }, function (err, result) {
+      .collection("collection1")
+      .insertOne({value:'key' }, function (err, result) {
         if (err) throw err;
         res.status(200).json(result);
       });
