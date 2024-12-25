@@ -12,4 +12,6 @@ export default {
   ...initialStateMongo,
   sectionSelected: "Home",
   lastSelected: "Home",
+  lastSelectedPhotoplus: 'home',
+  sectionSelectedPhotoplus: 'home',
 };

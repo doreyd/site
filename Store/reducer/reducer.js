@@ -707,6 +707,12 @@ case "TOGGLE_MAIL":
         lastSelected: state.sectionSelected,
         sectionSelected: action.payload,
       };
+      case "SELECT_SECTION_PHOTOPLUS":
+        return {
+          ...state,
+          lastSelectedPhotoplus: state.sectionSelected,
+          sectionSelectedPhotoplus: action.payload,
+        };
     case "SHOW_HELP":
       return {
         ...state,

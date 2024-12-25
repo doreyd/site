@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./Menu.module.css";
 
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+
 export default function Menu() {
+    const router = useRouter();
+
     return (
         <div className={styles.menu}>
             <div className={styles['logo-wrapper']}>
@@ -9,26 +14,20 @@ export default function Menu() {
                 <div className={styles['logo-text']}><div className={styles['logo-name']}>  BlueWrench </div>Plumbing</div>
             </div>
             <div className={styles.buttons}>
-                <a href='/plumbing'>
-                    <div className={styles.button}>
-                        Home
-                    </div>
-                </a>
-                <a href='/plumbing/about'>
-                    <div className={styles.button}>
-                        About
-                    </div>
-                </a>
-                <a href='/plumbing/services'>
-                    <div className={styles.button}>
-                        Services
-                    </div>
-                </a>
-                <a href='/plumbing/quote'>
-                    <div className={styles.button}>
-                        Get A Quote
-                    </div>
-                </a>
+
+                <Link href="/plumbing">
+                    <div className={`${router.pathname === '/plumbing' ? styles['button-selected'] : styles.button}`}>
+                        Home </div>
+                </Link>
+                <Link href="/plumbing/about">
+                    <div className={`${router.pathname === '/plumbing/about' ? styles['button-selected'] : styles.button}`}>
+                        About </div>
+                </Link>
+                <Link href="/plumbing/quote">
+                    <div className={`${router.pathname === '/plumbing/quote' ? styles['button-selected'] : styles.button}`}>
+                        Get A Quote</div>
+                </Link>
+
             </div>
         </div>
     );

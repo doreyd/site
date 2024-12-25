@@ -16,4 +16,5 @@ showMail:false,
   stateIndex: 0,
   stateHistory: [],
   stateSaved: true,
+  
 };

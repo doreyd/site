@@ -1,0 +1,78 @@
+.footer {
+    position: relative;
+    width: 100vw;
+    height: 220px;
+    background: #08134d;
+    color: white;
+    padding: 0rem 1rem;
+    /* margin:0px; */
+    margin-bottom:0px;
+    overflow:hidden;
+}
+
+.sections {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+}
+
+
+.logo-wrapper {
+    position: relative;
+    height: 100%;
+    margin: 0rem 0rem 0rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    height: 80%;
+    margin: 0rem 1rem 0rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-name {
+    position: relative;
+    color: white;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.logo-plus {
+    position: absolute;
+    color: white;
+    top: -10px;
+    right: -20px;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+}
+
