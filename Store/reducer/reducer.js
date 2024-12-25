@@ -19,11 +19,6 @@ export default function counter(state = initialState, action) {
           ...state.collections,
           [state.databaseSelected]: action.payload,
         },
-<<<<<<< HEAD
-       
-=======
-        collectionSelected: action.payload[0]?.name,
->>>>>>> ea30c39e2be192189ad6289d2721051825d2838c
       };
     case "SET_DOCUMENTS":
       return {
@@ -297,7 +292,7 @@ export default function counter(state = initialState, action) {
           [state.databaseSelected + "-" + state.collectionSelected]: [
             action.payload,
             ...state.documents[
-              state.databaseSelected + "-" + state.collectionSelected
+            state.databaseSelected + "-" + state.collectionSelected
             ],
           ],
         },
@@ -340,7 +335,7 @@ export default function counter(state = initialState, action) {
           [state.databaseSelected + "-" + state.collectionSelected]: [
             action.payload,
             ...state.documents[
-              state.databaseSelected + "-" + state.collectionSelected
+            state.databaseSelected + "-" + state.collectionSelected
             ],
           ],
         },

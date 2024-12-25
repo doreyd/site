@@ -18,7 +18,7 @@ export default function Description(props) {
       </div>
       <div className={styles.illustration}>{props.children}</div>
       <div className={styles.text}>
-        <div className={styles.time}>{props.time}</div>
+        {/* <div className={styles.time}>{props.time}</div> */}
         {props.description}
       </div>
       <div className={styles.technologies}>
