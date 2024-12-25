@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../../../styles/HomePlumbing.module.css";
 
 // import Main from "../Main/Main";
-import PlumbingServices from "../../../Websites/Plumbing/PlumbingServices";
+import PlumbingServices from "../../../WebSites/Plumbing/PlumbingServices";
 
 export default function Index() {
 
