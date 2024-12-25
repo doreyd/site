@@ -20,17 +20,17 @@ export default function DeepScore() {
     "JavaScript, CSS, NodeJS, Python, Numpy, Pandas, Matplotlib, VScode, Git";
 
   return (
-    <a href="https://blubuk.com">
+<a href='https://blubuk.com'>   
       <Project
-        title="WebApp Developer"
+        title="Full-Stack  Developer"
         experience="@ BluBuk"
-        time="SEPTEMBER 2021 - SEPTEMBER 2022"
+        time=""
         description={description}
         techs={techs}
         left={false}
       >
         <Dnn />
       </Project>
-    </a>
+   </a>
   );
 }

@@ -20,7 +20,6 @@ export default function MenuButton({
 
   const hrefBuilder = (section) => {
     if (section === "Resume") return "/resume";
-    else if (section === "Mail") return "mailto: mdoreyd@gmail.com";
     return "#" + section;
   };
 

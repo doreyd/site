@@ -7,6 +7,13 @@ import * as save from "./functions/save";
 
 export default function counter(state = initialState, action) {
   switch (action.type) {
+case "TOGGLE_MAIL":
+      return {
+        ...state,
+        showMail: !state.showMail,
+      };
+
+
     case "SET_DATABASES":
       return {
         ...state,
@@ -19,6 +26,10 @@ export default function counter(state = initialState, action) {
           ...state.collections,
           [state.databaseSelected]: action.payload,
         },
+<<<<<<< HEAD
+=======
+        collectionSelected: action.payload[0]?.name,
+>>>>>>> 23912b3 (old updates)
       };
     case "SET_DOCUMENTS":
       return {

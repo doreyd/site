@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import Footer from "../Footer/Footer";
 import Portfolio from "../Portfolio/Portfolio";
 import Work from "../Portfolio/Work";
+import Mail from "../Mail/Mail";
 
 export default function Main() {
   return (
@@ -12,6 +13,7 @@ export default function Main() {
       <Portfolio />
       <Work />
       <Footer />
+<Mail />
     </div>
   );
 }

@@ -31,7 +31,6 @@ export default function MenuHorizontal() {
     "Work",
     "Principles",
     "Mail",
-    "Resume",
   ];
   useEffect(() => {
     if (window) {
@@ -44,7 +43,7 @@ export default function MenuHorizontal() {
   }, [handleNavigation]);
 
   const clickHandler = (thisSection) => {
-    if (thisSection === "Mail") dispatch({ type: "MAIL_ON" });
+    if (thisSection === "Mail") dispatch({ type:"TOGGLE_MAIL" });
     else dispatch({ type: "SELECT_SECTION", payload: thisSection });
   };
 

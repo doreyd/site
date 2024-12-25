@@ -12,7 +12,7 @@ export default {
   // },
   shapeSelected: "Circle",
   modeSelected: "colors",
-
+showMail:false,
   stateIndex: 0,
   stateHistory: [],
   stateSaved: true,

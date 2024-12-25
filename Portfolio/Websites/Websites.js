@@ -21,17 +21,17 @@ export default function Analytics() {
   const techs =
     "JavaScript, CSS, React/Redux, NodeJS, NextJS, SQL, MongoDB, Scalar Vector Graphics (SVG), VScode, Git";
   return (
-    <a href="https://blubuk.com">
+<a href='https://blubuk.com'>   
       <Project
-        title="Website Developer"
+        title="Web Developer"
         experience="@ BluBuk"
-        time="NOVEMBER 2019 - MARCH 2020"
+        time=""
         description={description}
         techs={techs}
         left={false}
       >
         <SvgAnimation />
       </Project>
-    </a>
+   </a>
   );
 }

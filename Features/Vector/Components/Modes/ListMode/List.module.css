@@ -1,6 +1,6 @@
 .list-control {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 25px);
   width: 300px;
   background: rgb(2, 9, 23);
   color: var(--primary-color);

@@ -13,11 +13,10 @@ export default function Menu() {
     "Work",
     "Principles",
     "Mail",
-    "Resume",
   ];
 
   const clickHandler = (thisSection) => {
-    if (thisSection === "Mail") dispatch({ type: "MAIL_ON" });
+    if (thisSection === "Mail") dispatch({ type:"TOGGLE_MAIL" });
     else dispatch({ type: "SELECT_SECTION", payload: thisSection });
   };
 
