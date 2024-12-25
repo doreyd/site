@@ -26,10 +26,6 @@ case "TOGGLE_MAIL":
           ...state.collections,
           [state.databaseSelected]: action.payload,
         },
-<<<<<<< HEAD
-=======
-        collectionSelected: action.payload[0]?.name,
->>>>>>> 23912b3 (old updates)
       };
     case "SET_DOCUMENTS":
       return {

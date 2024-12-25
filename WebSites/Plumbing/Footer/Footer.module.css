@@ -1,0 +1,27 @@
+.footer {
+    position: relative;
+    width: 100vw;
+    height: 220px;
+    background: #08134d;
+    color: white;
+    padding: 0rem 1rem;
+    /* margin:0px; */
+    margin-bottom:0px;
+    overflow:hidden;
+}
+
+.sections {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+}
