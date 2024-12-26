@@ -40,7 +40,7 @@ export default function Icons() {
               src={`/icons/${icon}`}
               className={styles["icon-image"]}
               style={{
-                animationDelay: `${200 + index * 50}ms`,
+                animationDelay: `${50 + index * 50}ms`,
                 transition: "all linear 0.2s",
               }}
             />

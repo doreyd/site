@@ -12,7 +12,7 @@ export default function useScrollHook2(elemRef, section) {
       let percentage = (aa.top * 100) / aa.height;
       if (percentage < 30 && percentage > -50) {
         dispatch({ type: "SELECT_SECTION_PHOTOPLUS", payload: section });
-        window.history.pushState("localhost", "Sample Title", "/#" + section);
+        window.history.pushState("localhost", "Sample Title", "/photoplus#" + section);
         // console.log(section)
       }
     }

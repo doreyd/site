@@ -17,6 +17,7 @@
     transform: translateY(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0%);
     opacity: 1;
@@ -41,6 +42,7 @@
   opacity: 0;
   animation: reveal-text ease-out 0.3s forwards;
 }
+
 .name {
   position: relative;
   font-size: 4rem;
@@ -89,16 +91,18 @@
 
 @keyframes icon-animation {
   0% {
-    opacity: 0;
-    transform: scale(0%);
-  }
-  60% {
-    opacity: 1;
-    transform: scale(120%);
-  }
-  100% {
     opacity: 1;
     transform: scale(100%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(140%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(110%);
   }
 }
 
@@ -109,7 +113,7 @@
   height: 11vh;
   border: 10px solid transparent;
   width: auto;
-  opacity: 0;
+  opacity: 1;
   animation: icon-animation 0.5s linear forwards;
 }
 
@@ -149,26 +153,32 @@
   .hi {
     font-size: 1.1rem;
   }
+
   .name-and-title {
     width: 90vw;
     height: 100vh;
     height: auto;
     margin-bottom: 0px;
   }
+
   .icons {
     width: 100vw;
   }
+
   .name {
     font-size: 2rem;
   }
+
   .title {
     font-size: 1.3rem;
     margin: 0.5rem 0rem;
   }
+
   .description {
     width: 85vw;
     font-size: 2.5vh;
   }
+
   .icon-image {
     height: 10vh;
     margin: 0px;

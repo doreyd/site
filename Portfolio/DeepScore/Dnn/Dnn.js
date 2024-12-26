@@ -19,7 +19,7 @@ export default function Dnn(props) {
         strokeWidth={sw}
         className={styles.dot}
         fill={dotColor}
-        style={{ animationDelay: `${(index * duration) / 6}ms` }}
+        style={{ animationDelay: `${((index - 2) * duration) / 6}ms` }}
       />
     );
   };
@@ -34,7 +34,7 @@ export default function Dnn(props) {
         y2={y2}
         className={styles.line}
         style={{
-          animationDelay: `${(index * duration) / 6}ms`,
+          animationDelay: `${((index - 2) * duration) / 6}ms`,
         }}
       />
     );
