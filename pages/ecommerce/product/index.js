@@ -1,8 +1,8 @@
 import Head from "next/head";
-import styles from "../../styles/HomePlumbing.module.css";
+import styles from "../../../styles/HomePlumbing.module.css";
 
 // import Main from "../Main/Main";
-import EcommerceHome from "../../WebSites/Ecommerce/EcommerceHome";
+import EcommerceProductDetail from "../../../WebSites/Ecommerce/EcommerceProductDetail";
 
 export default function Index() {
 
@@ -18,7 +18,7 @@ export default function Index() {
                 />
                 <link rel="icon" href="/favicon.jpg" />
             </Head>
-            <EcommerceHome />
+            <EcommerceProductDetail />
         </div>
     );
 }

@@ -1,0 +1,91 @@
+/* Menu.module.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    width: 100%;
+    /* background: red; */
+}
+
+
+
+.svg {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    /* background:red; */
+}
+
+.logo {
+    width: 20px;
+    margin-right: 2rem;
+}
+
+.bag1 {
+    position: absolute;
+    /* background:green; */
+    top: 5px;
+    transform: rotate(-35deg);
+    fill: white;
+    padding: 0.2rem;
+    border-radius:50%;
+    background: #6813cc;
+    /* border:1px solid lightgrey; */
+    /* margin-right: 1rem; */
+}
+
+.bag2 {
+    position: absolute;
+    top: 10px;
+
+    /* margin-right: 1rem; */
+}
+
+.siteName {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* ... rest of the menu styles (from previous example) ... */
+
+.rightSection {
+    display: flex;
+    align-items: center;
+}
+
+.cartButton,
+.loginButton {
+    margin-left: 10px;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.buttons {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background: green; */
+    /* width:800px; */
+}
+
+.button {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0rem 1rem;
+    /* width: 200px; */
+}

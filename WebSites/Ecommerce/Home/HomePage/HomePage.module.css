@@ -1,0 +1,165 @@
+/* HomePage.module.css */
+
+/* Container */
+.container {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width:100vw;
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .heroSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .heroSection p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .shopNowBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .shopNowBtn:hover {
+    background-color: #ff6347;
+  }
+  
+  /* Categories Section */
+  .categoriesSection {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .categoriesGrid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .categoryCard {
+    width: 200px;
+    padding:20px 0px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .categoryCard img {
+    width: auto;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .categoryCard h3 {
+    padding: 10px 0;
+  }
+  
+  /* Products Section */
+  .productsSection {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background:red; */
+    padding: 40px 20px;
+  }
+  
+  .productsGrid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .productCard {
+    width: 200px;
+    padding:20px 0px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .productCard img {
+    width: auto;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .productCard h3 {
+    padding: 10px 0;
+  }
+  
+  .productCard p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .productCard button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .productCard button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Newsletter Section */
+  .newsletterSection {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .newsletterSection h2 {
+    margin-bottom: 10px;
+  }
+  
+  .newsletterSection input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .newsletterSection button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletterSection button:hover {
+    background-color: #218838;
+  }
+  

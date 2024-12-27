@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../../../styles/HomePlumbing.module.css";
 
 // import Main from "../Main/Main";
-import PhotoplusServices from "../../../WebSites/Photoplus/PhotoplusServices";
+import EcommerceOrderConfirmation from "../../../WebSites/Ecommerce/EcommerceOrderConfirmation";
 
 export default function Index() {
 
@@ -18,7 +18,20 @@ export default function Index() {
                 />
                 <link rel="icon" href="/favicon.jpg" />
             </Head>
-            <PhotoplusServices />
+            <EcommerceOrderConfirmation />
         </div>
     );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

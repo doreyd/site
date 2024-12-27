@@ -17,12 +17,12 @@ export default function Main() {
     <div className={styles.main}>
       <Menu />
       {/* <Home /> */}
-      {/* <CartLoader /> */}
+      <CartLoader />
       {/* <CheckoutPage /> */}
       {/* <SampleOrderPage /> */}
       {/* <ProductDetail /> */}
       {/* <ProductListing /> */}
-      <HomePage />
+      {/* <HomePage /> */}
       <Footer />
     </div>
   );

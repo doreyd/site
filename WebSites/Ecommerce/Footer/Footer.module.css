@@ -2,7 +2,8 @@
     position: relative;
     width: 100vw;
     height: 220px;
-    background: #08134d;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    /* background: #08134d; */
     color: white;
     padding: 0rem 1rem;
     /* margin:0px; */
@@ -24,4 +25,16 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 2rem 1rem;
+}
+
+.bag{
+    position: relative;
+    top: -10px;
+    transform: rotate(-35deg);
+    /* fill: white;
+    background: #6813cc; */
+    fill: #6813cc;
+    background: white;
+    padding: 0.2rem 0.4rem 0.4rem 0.2rem;
+    border-radius:50%;
 }

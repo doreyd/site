@@ -21,8 +21,8 @@ export default function Main() {
       {/* <CheckoutPage /> */}
       {/* <SampleOrderPage /> */}
       {/* <ProductDetail /> */}
-      {/* <ProductListing /> */}
-      <HomePage />
+      <ProductListing />
+      {/* <HomePage /> */}
       <Footer />
     </div>
   );
