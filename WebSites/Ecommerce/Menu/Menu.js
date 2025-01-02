@@ -8,7 +8,7 @@ export default function Menu() {
     const router = useRouter();
 
     return (
-        <div className={styles.menu}>
+        <div className={styles.menu} style={{ background: '#232f3e', color: 'white' }}>
             <div className={styles['logo-wrapper']}>
                 <img src='/portfolio/plumbing-logo.png' className={styles.logo} />
                 <div className={styles['logo-text']}><div className={styles['logo-name']}>  BlueWrench </div>Plumbing</div>

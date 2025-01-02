@@ -22,8 +22,8 @@ export default function DeepScore() {
   return (
 <a href='https://blubuk.com'>   
       <Project
-        title="Full-Stack  Developer"
-        experience="@ BluBuk"
+        title="Deep Neural Network"
+        experience=""
         time=""
         description={description}
         techs={techs}

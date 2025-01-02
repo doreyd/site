@@ -16,7 +16,7 @@ const Menu = () => {
     };
 
     return (
-        <header className={styles.header}>
+        <header className={styles.header} style={{ background: '#232f3e', color: 'white' }}>
             <div className={styles.logoContainer}>
                 <Logo />
                 {/* <img src='/portfolio/ecommerce-logo-2.png' alt="Ecommerce Logo" className={styles.logo} /> */}

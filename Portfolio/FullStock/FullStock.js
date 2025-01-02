@@ -28,8 +28,8 @@ export default function FullStock() {
   const techs = "JavaScript, CSS, React/Redux, NodeJS, SQL, VScode, Git";
   return (
     <Project
-      title="Full-Stack Developer"
-      experience="@ AJPG"
+      title="Inventory Management System"
+      experience=""
       time=""
       description={description}
       techs={techs}

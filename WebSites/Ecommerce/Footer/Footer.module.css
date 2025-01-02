@@ -3,12 +3,14 @@
     width: 100vw;
     height: 220px;
     background: linear-gradient(to right, #6a11cb, #2575fc);
+    /* background: #121f01; */
+    /* background: linear-gradient(to right, #192c00, #121f01); */
     /* background: #08134d; */
     color: white;
     padding: 0rem 1rem;
     /* margin:0px; */
-    margin-bottom:0px;
-    overflow:hidden;
+    margin-bottom: 0px;
+    overflow: hidden;
 }
 
 .sections {
@@ -27,7 +29,7 @@
     padding: 2rem 1rem;
 }
 
-.bag{
+.bag {
     position: relative;
     top: -10px;
     transform: rotate(-35deg);
@@ -36,5 +38,5 @@
     fill: #6813cc;
     background: white;
     padding: 0.2rem 0.4rem 0.4rem 0.2rem;
-    border-radius:50%;
+    border-radius: 50%;
 }

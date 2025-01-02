@@ -1,0 +1,211 @@
+.project {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+
+.title {
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.1rem;
+  top: 0.5rem;
+  left: 0.5rem;
+  transition: all linear 0.1s;
+}
+
+.description {
+  position: absolute;
+  font-size: 1.1rem;
+  color: white;
+  bottom: -200%;
+  width: 100%;
+  padding: 0% 5%;
+  text-align: center;
+  transition: all linear 0.4s;
+  transition-delay: 0.05s;
+}
+
+.svg {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  height: 90%;
+  width: 100%;
+  /* border:1px solid red; */
+}
+
+.dot {
+  fill: rgb(171, 200, 52);
+}
+.line {
+  stroke: rgb(20, 139, 26);
+}
+
+.bar {
+  transition: all linear 0.3s;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 0.6rem;
+  }
+}
+
+.logo-wrapper {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #f77321, #fc6507);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0px 10px;
+}
+
+.logo-bar {
+  position: relative;
+  background-image: linear-gradient(to bottom, white, rgb(190, 184, 184));
+  width: 5px;
+  height: 40px;
+}
+
+.text {
+  position: relative;
+}
+
+.ordered {
+  font-size: 0.4rem;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 0.6rem;
+  }
+  .project {
+    position: relative;
+    height: 90vw;
+    width: 90vw;
+    margin: 1rem 4%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all linear 0.1s;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .project {
+    height: 70vw;
+    width: 70vw;
+  }
+}
+
+.warehouse {
+  position: absolute;
+  bottom: 15%;
+  right: 0%;
+  height: 20%;
+  width: 20%;
+  fill: rgb(1, 25, 48);
+  background: white;
+}
+
+.factory {
+  position: absolute;
+  bottom: 15%;
+  left: 0%;
+  height: 20%;
+  width: 20%;
+  fill: rgb(1, 25, 48);
+  background: white;
+}
+
+.truck {
+  position: absolute;
+  bottom: 0%;
+  left: 47%;
+  height: 15%;
+  width: 15%;
+  fill: rgb(1, 25, 48);
+  transform: scale(-1, 1);
+  background: white;
+}
+
+.server2 {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  height: 20%;
+  width: 20%;
+  fill: rgb(1, 25, 48);
+  transform: scale(-1, 1);
+  background: white;
+}
+
+.screen2 {
+  position: absolute;
+  top: 25%;
+  right: 0%;
+  height: 20%;
+  width: 20%;
+  fill: rgb(1, 25, 48);
+  background: white;
+}
+
+.screen3 {
+  position: absolute;
+  top: 0%;
+  left: 42%;
+  height: 20%;
+  width: 20%;
+  fill: rgb(1, 25, 48);
+  background: white;
+  transform:rotate(-90deg);
+}
+
+.screen1 {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  height: 20%;
+  width: 20%;
+  fill: rgb(1, 25, 48);
+  background: white;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 2;
+  }
+}
+
+.line1 {
+  stroke: rgb(15, 107, 15);
+  stroke-dashoffset: 200;
+  stroke-dasharray: 2;
+  animation: dash 20s linear infinite;
+}
+
+.line2 {
+  stroke: orangered;
+  stroke-dashoffset: 200;
+  stroke-dasharray: 2;
+  animation: dash 20s linear infinite;
+}

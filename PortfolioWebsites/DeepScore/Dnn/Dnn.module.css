@@ -1,0 +1,62 @@
+.svg {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+@keyframes dot-animation {
+  0% {
+    r: 1.1;
+  }
+  37% {
+    r: 1.1;
+  }
+  50% {
+    r: 2.5;
+  }
+  68% {
+    r: 1.1;
+  }
+  100% {
+    r: 1.1;
+  }
+}
+
+.dot {
+  r: 1.1;
+  fill: rgb(1, 25, 48);
+  stroke: lightgrey;
+  stroke-width: 0.5;
+  animation: dot-animation 3s infinite;
+  /* transition: "all linear 0.8s"; */
+}
+
+@keyframes line-animation {
+  0% {
+    stroke: rgb(190, 188, 188);
+  }
+  33% {
+    stroke: rgb(190, 188, 188);
+  }
+  37% {
+    stroke: rgb(1, 25, 48);
+  }
+  50% {
+    stroke: rgb(1, 25, 48);
+  }
+  55% {
+    stroke: rgb(1, 25, 48);
+  }
+  60% {
+    stroke: rgb(190, 188, 188);
+  }
+  100% {
+    stroke: rgb(190, 188, 188);
+  }
+}
+
+.line {
+  stroke-width: 0.5;
+  stroke: rgb(190, 188, 188);
+  animation: line-animation 3s infinite;
+}

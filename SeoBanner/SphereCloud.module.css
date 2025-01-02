@@ -1,0 +1,73 @@
+.container {
+    /* background: #000; */
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    /* background: red; */
+}
+
+.all {
+    margin: 160px auto;
+    width: 100px;
+    height: 100px;
+    animation: grow 4s ease-in-out forwards;
+}
+
+.java,
+.script {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 40px;
+    display: block;
+}
+
+.sphere {
+    position: relative;
+    /* width: 800px;
+    height: 450px; */
+    width: 100%;
+    height: 100%;
+    /* padding: 100px; */
+
+    /* margin: -300px auto 0; */
+    visibility: hidden;
+    overflow:hidden;
+    background: green;
+}
+
+.sphere a {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.yellow {
+    color: yellow;
+}
+
+@keyframes grow {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sphere {
+      width:100vw;
+      height:100vw;
+      font-size:0.7rem;
+    }
+  }

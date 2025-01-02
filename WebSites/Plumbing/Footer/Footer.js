@@ -23,7 +23,7 @@ export default function Footer() {
                     <span style={{ fontSize: '0.9rem', marginBottom: '1rem', }}>2/45 Tower Street, New York, USA</span>
                     <span style={{ fontSize: '0.9rem', marginBottom: '1rem', }}>0012 678 8899</span>
                     <span style={{ fontSize: '0.9rem', marginBottom: '1rem', }}>contact@doreydmehila.com</span>
-                    <span style={{ fontSize: '0.9rem', marginBottom: '1rem', }}>www.doreydmehila.com</span>
+                    <a href='/'>  <span style={{ fontSize: '0.9rem', marginBottom: '1rem', }}>www.doreydmehila.com</span></a>
                 </div>
                 <div className={styles.section}>
                     <span style={{ fontSize: '1rem', fontWeight: 'bold', marginBottom: '1rem', }}>Subscribe & Win a Coupon</span>

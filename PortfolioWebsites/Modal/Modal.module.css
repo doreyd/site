@@ -1,0 +1,161 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* background: red;
+    border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9000;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #fff; */
+    /* padding: 20px; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* text-align: center; */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.dots {
+    margin-top: 15px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+
+@keyframes img-animation {
+    0% {
+        transform: translate(20%, 0%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
+
+
+.img {
+    position: relative;
+    padding: 0px;
+    height: 70vh;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: img-animation 0.5s ease-in-out forwards;
+}
+
+.dots {
+    position: relative;
+    /* width: 80px; */
+    width: auto;
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dot {
+    position: relative;
+    height: 12px;
+    width: 12px;
+    background: white;
+    border-radius: 50%;
+    transition: all linear 0.1s;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.dot:hover {
+    transform: scale(1.3);
+    background: rgb(35, 35, 104);
+    border: 1px solid white;
+}
+
+
+.dot-active {
+    position: relative;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    transition: all linear 0.1s;
+    background: rgb(35, 35, 104);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+.dot-active:hover {
+    transform: scale(1.3);
+    background: rgb(35, 35, 104);
+    border: 1px solid white;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    fill: white;
+    transition: all linear 0.1s;
+    cursor: pointer;
+}
+
+.close:hover {
+    transform: rotate(90deg) scale(1.1);
+}

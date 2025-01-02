@@ -68,6 +68,7 @@
     transition: all linear 0.1s;
     padding: 0.3rem 1rem;
     cursor: pointer;
+    fill:white;
 }
 
 .button:hover {

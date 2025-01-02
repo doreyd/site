@@ -7,7 +7,7 @@ import * as save from "./functions/save";
 
 export default function counter(state = initialState, action) {
   switch (action.type) {
-case "TOGGLE_MAIL":
+    case "TOGGLE_MAIL":
       return {
         ...state,
         showMail: !state.showMail,
@@ -707,12 +707,12 @@ case "TOGGLE_MAIL":
         lastSelected: state.sectionSelected,
         sectionSelected: action.payload,
       };
-      case "SELECT_SECTION_PHOTOPLUS":
-        return {
-          ...state,
-          lastSelectedPhotoplus: state.sectionSelected,
-          sectionSelectedPhotoplus: action.payload,
-        };
+    case "SELECT_SECTION_PHOTOPLUS":
+      return {
+        ...state,
+        lastSelectedPhotoplus: state.sectionSelected,
+        sectionSelectedPhotoplus: action.payload,
+      };
     case "SHOW_HELP":
       return {
         ...state,
@@ -733,7 +733,11 @@ case "TOGGLE_MAIL":
         ...state,
         mailOn: false,
       };
-
+    case "SELECT_SITE":
+      return {
+        ...state,
+        siteSelected: action.payload
+      };
     default:
       return state;
   }

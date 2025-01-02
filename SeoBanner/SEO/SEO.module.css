@@ -1,0 +1,162 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.exo-500 {
+    font-family: "Exo", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.wrapper-big {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:4px solid red; */
+}
+
+
+
+.wrapper-small {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* border:4px solid red; */
+}
+
+.inside-wrapper {
+    position: relative;
+    top: -100px;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 4px solid green; */
+}
+
+.seo-wrapper {
+    position: absolute;
+    top: cal(100vh/2 -75px);
+    left: cal(100v/w2 -75px);
+    background: radial-gradient(circle at 30px 30px, #5cabff, #000);
+    color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: scaleUpDown2 4s infinite;
+}
+
+
+.seo {
+    position: relative;
+    font-size: 3rem;
+}
+
+.seo-text {
+    position: relative;
+    transform: translate(0, -90%);
+    font-size: 0.33rem;
+}
+
+@keyframes scaleUpDown {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
+@keyframes scaleUpDown2 {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+.dot {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    opacity: 0.8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .dot {
+        height: 70px;
+        width: 70px;
+        font-size: 0.6rem;
+    }
+
+    .wrapper-small {
+        display: flex;
+    }
+
+    .wrapper-big {
+        display: none;
+    }
+
+
+
+    .seo-wrapper {
+        position: absolute;
+        top: cal(100vh/2 - 50px);
+        left: cal(100vw/2 - 50px);
+        background: radial-gradient(circle at 30px 30px, #5cabff, #000);
+        color: white;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: scaleUpDown2 4s infinite;
+    }
+
+
+    .seo {
+        position: relative;
+        font-size: 1.7rem;
+    }
+
+    .seo-text {
+        position: relative;
+        transform: translate(0, -90%);
+        font-size: 0.2rem;
+    }
+}

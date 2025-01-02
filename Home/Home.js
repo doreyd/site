@@ -7,6 +7,7 @@ import Logo from "./Logo/Logo";
 import Menu from "../Menu/Menu";
 import MenuHorizontal from "../Menu/MenuHorizontal";
 import useScrollHook from "../Hooks/useScrollHook";
+import SeoBanner from '../SeoBanner/SeoBanner'
 
 export default function Home() {
   const homeRef = useRef(null);
@@ -37,6 +38,7 @@ export default function Home() {
       </div>
 
       <Icons />
+      {/* <SeoBanner /> */}
     </section>
   );
 }

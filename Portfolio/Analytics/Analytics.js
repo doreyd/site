@@ -18,8 +18,8 @@ export default function Analytics() {
   return (
 <a href='https://blubuk.com'>
       <Project
-        title="Front-end Developer"
-        experience="@ BluBuk"
+        title="Business Intelligence Interface"
+        experience=""
         time=""
         description={description}
         techs={techs}

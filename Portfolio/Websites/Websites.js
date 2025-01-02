@@ -6,8 +6,7 @@ export default function Analytics() {
   const description = (
     <span>
       Developed and maintained <b>responsive, performant, and robust code</b>{" "}
-      for client website primarily using HTML, CSS, Sass, JavaScript, React,
-      NodeJS and jQuery. Provided <b>domain registration</b> and renewal,{" "}
+      for client website and Apps. Provided <b>domain registration</b> and renewal,{" "}
       <b>secure hosting</b> on Google Cloud Platform,{" "}
       <b>and on-demand Restful API development</b> and deployment. Created
       databases{" "}
@@ -21,10 +20,10 @@ export default function Analytics() {
   const techs =
     "JavaScript, CSS, React/Redux, NodeJS, NextJS, SQL, MongoDB, Scalar Vector Graphics (SVG), VScode, Git";
   return (
-<a href='https://blubuk.com'>   
+    <a href='https://blubuk.com'>
       <Project
-        title="Web Developer"
-        experience="@ BluBuk"
+        title="Web & App Development"
+        experience=""
         time=""
         description={description}
         techs={techs}
@@ -32,6 +31,6 @@ export default function Analytics() {
       >
         <SvgAnimation />
       </Project>
-   </a>
+    </a>
   );
 }

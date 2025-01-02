@@ -15,6 +15,7 @@
 .svg {
     position: relative;
     margin-right: 1rem;
+    fill:white;
 }
 
 .logoContainer {
@@ -77,6 +78,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    fill:white;
     /* background: green; */
     /* width:800px; */
 }
