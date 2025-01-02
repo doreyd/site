@@ -84,8 +84,6 @@ const WordCloud = () => {
         }
     })
 
-    console.log(newPoints)
-
     return (
         <div className={styles['wrapper-small']}>
             <div className={styles['inside-wrapper']}>
