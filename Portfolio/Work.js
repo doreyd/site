@@ -18,7 +18,7 @@ export default function Portfolio() {
       ref={refWork}
       style={{ marginTop: "4rem" }}
     >
-      <div className={styles.title}>SOME FUN PROJECTS</div>
+      <div className={styles.title}>COOL PROJECTS</div>
       <div className={styles.portfolio}>
         <VectorPlus />
         <MongoJuice />

@@ -18,7 +18,7 @@ export default function Analytics() {
   return (
 <a href='https://blubuk.com'>
       <Project
-        title="Business Intelligence Interface"
+        title="Business Intelligence Interfaces"
         experience=""
         time=""
         description={description}

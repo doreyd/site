@@ -18,7 +18,7 @@ export default function Portfolio() {
       id="Experience"
       ref={refExp}
     >
-      <div className={styles.title}>PAST BIG PROJECTS</div>
+      <div className={styles.title}>WORK EXPERIENCE</div>
       <div className={styles.portfolio}>
         <Websites />
         <Analytics />
